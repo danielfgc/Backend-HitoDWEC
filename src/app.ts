@@ -1,6 +1,6 @@
 import express from "express";
 import userRouter from "./routers/users/users.routes";
-import authRouter from "./routers/users/users.routes";
+import authRouter from "./routers/auth/auth.routes";
 import formalityRouter from "./routers/formalities/formalities.routes";
 import cors from "cors";
 import { verifyToken } from "./controllers/auth/validationTokenController";

@@ -1,7 +1,6 @@
 import jsonwebtoken from "jsonwebtoken";
 import { Request, Response,NextFunction } from "express";
 
-const config = "patata";
 
 export const verifyToken = (req: Request, res: Response,next:NextFunction) =>{
     const token = req.header("auth-token");
