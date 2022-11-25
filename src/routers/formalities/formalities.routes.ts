@@ -5,7 +5,7 @@ import { getFormalitiesFromDatabase } from "../../controllers/formalities/getFor
 import { updateFormalityInDatabase } from "../../controllers/formalities/updateFormalityInDatabase";
 
 const router = express.Router();
-router.get("/", getFormalitiesFromDatabase);
+router.get("/:userId", getFormalitiesFromDatabase);
 router.post("/", createFormalityInDatabase);
 router.delete("/:formalityId", deleteFormalityInDatabase);
 router.put("/:formalityId", updateFormalityInDatabase);
